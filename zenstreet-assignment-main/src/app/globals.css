@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-white text-black;
+  }
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6;
+  }
+  .button-primary {
+    @apply bg-[#22BBFF] text-white hover:bg-[#22BBFF]/90 transition-colors;
+  }
+}
